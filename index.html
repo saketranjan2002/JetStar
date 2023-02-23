@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderDetails</title>
+    <link rel="stylesheet" href="./styles/register.css">
+</head>
+
+<body>
+    <div class="center_left">
+        <img src="./Register-Qr.png" alt="">
+    </div>
+    <div class="register">
+        <form  method="post"   >
+            <h1>Order Details</h1>
+            <div class="txt_field">
+                <label>Product Name</label><br>
+                <input type="text" name="full_name" value="GoodDay Choco chip"  id="full_name" disabled required>
+            </div>
+            <div class="txt_field">
+                <label>Order-ID</label><br>
+                <input type="email" name="email" value="12103" onchange="check_email()" oninput="check_email()" id="email" disabled required>
+            </div>
+            <div id="roll_div" class="txt_field">
+                <label>Price</label><br>
+                <input type="text" name="roll_number" value="30 Rs" oninput="check_roll()" onchange="check_roll()" disabled id="roll" required>
+            </div>
+            <div class="txt_field">
+                <label>Date</label><br>
+                <span></span>
+                <input type="date" name="password" id="today" autocomplete="on" onchange="check_pass()" oninput="check_pass()" disabled
+                    required>
+            </div>
+            <a href="./custdetails.html">Next</a>
+
+            </form>
+    </div>
+    <script>
+        let today = new Date().toISOString().substr(0, 10);
+        document.querySelector("#today").value = today;
+        document.querySelector("#today2").valueAsDate = new Date();
+
+        
+    </script>
+    <script src="./script/register.js"></script>
+</body>
+
+</html>
