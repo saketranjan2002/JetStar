@@ -3,6 +3,11 @@ let user_ele = document.getElementById("usrType")
 let rollno = document.getElementById("roll")
 let roll_div = document.getElementById("roll_div")
 
+function proceed(){
+    window.location.href = "./payment.html";
+}
+
+
 user_ele.addEventListener("change", () => {
     if (user_ele.value == "Student") {
         roll_div.style.display = "block";
