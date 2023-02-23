@@ -21,13 +21,13 @@ function check_email() {
     let ele = document.querySelector("#email");
     let val = document.querySelector("#email").value;
     let msg = document.querySelector("#email_err");
-    if (val.includes("@") && !val.includes("@iiits.in")) {
+    if (val.includes("@") && !val.includes("@gmail.com")) {
         ele.style.borderBottom = "2px solid blue";
         msg.innerHTML = "Only iiits.in extension allowed";
         msg.style.display = "block"
         return false
         
-    } else if (val.includes("@iiits.in")) {
+    } else if (val.includes("@gmail.com")) {
         ele.style.borderBottom = "2px solid green";
         msg.style.display = "none";
         return true
