@@ -162,7 +162,13 @@ form .button {
     color: white;
     border: none;
     width: 40%;
-    
+    color: white;
+    background-color: #2691d9;
+    margin-top: 1rem;
+    /* margin-left: 25%; */
+    padding: 0.6rem; 
+    padding-left: 2rem;
+    padding-right: 2rem; 
     /* border-radius: 0.5rem; */
     cursor: pointer;
     padding: 0.5rem;
@@ -199,7 +205,6 @@ a{
     padding-right: 2rem; 
     font-size: larger;
     /* border-radius: 0.5rem; */
-    margin-top: 1rem;
 }
 
 .signup_link a:hover {

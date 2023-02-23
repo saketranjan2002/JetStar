@@ -14,7 +14,7 @@
         <img src="./Register-Qr.png" alt="">
     </div>
     <div class="register">
-        <form  method="post"   >
+        <form  onsubmit="proceed()" method="post"   >
             <h1>Customer Details</h1>
             <div class="txt_field">
                 <label>Full Name</label><br>
@@ -26,17 +26,23 @@
             </div>
             <div id="roll_div" class="txt_field">
                 <label>Phone Number</label><br>
-                <input type="text" name="roll_number"   id="roll" required>
+                <input type="text" name="roll_number" id="roll" required>
             </div>
             <div class="txt_field">
                 <label>Address</label><br>
                 <span></span>
                 <input type="text" name="password" id="today"  required>
             </div>
-                <a href="./payment.html">Proceed to pay</a>
+            <button class="button" id="btn" type="submit">
+                Proceed to pay
+            </button>
             </form>
     </div>
-    
+    <script>
+        const proceed=()=>{
+            window.location.href = "./payment.html";
+        }
+    </script>
     <script src="./script/register.js"></script>
 </body>
 
