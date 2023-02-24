@@ -201,6 +201,7 @@ a{
     margin-top: 1rem;
     /* margin-left: 25%; */
     padding: 0.6rem; 
+    cursor: pointer;
     padding-left: 2rem;
     padding-right: 2rem; 
     font-size: larger;
